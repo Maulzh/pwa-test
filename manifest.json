@@ -4,6 +4,18 @@
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#111",
-    "theme_color": "#db4938",
-    "orientation:": "portrait-primary"
+    "theme_color": "#111",
+    "orientation:": "portrait-primary",
+    "icons": [
+        {
+            "src": "/Images/Icons/Icon-192px.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/Images/Icons/Icon-512px.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
 }
