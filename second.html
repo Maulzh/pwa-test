@@ -17,6 +17,41 @@
     </head>
 <body>
     <h2>Otra página jeje</h2>
+    <h3>Calculator</h3>
     <a href="./index.html">Regresar</a>
 </body>
+<script>
+    document.querySelector("h3").addEventListener("click", () => {
+        let a = prompt("Primer número");
+        let b = prompt("Segundo número");
+        let o = prompt("Operación: (+, -, *, /)");
+
+        let r;
+
+        if(!Number(a) || !Number(b) || !["+", "-", "*", "/"].includes(o)) return alert("Valores incorrectos.")
+
+        a = Number(a);
+        b = Number(b);
+
+        switch(o) {
+            case "+":
+                r = a + b;
+                break;
+            case "-":
+                r = a - b;
+                break;
+            case "*":
+                r = a * b;
+                break;
+            case "/":
+                r = a / b;
+                break;
+            default:
+                r = `a: ${a}, b: ${b}, o: ${o}`;
+                break;
+        }
+
+        alert(`El resultado es: ${r}`);
+    })
+</script>
 </html>
